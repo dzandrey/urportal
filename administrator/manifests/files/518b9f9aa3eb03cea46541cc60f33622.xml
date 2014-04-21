@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="file" method="upgrade">
+    <name>Russian для Mosets Tree Package 3.0.6</name>
+    <author>JLsite</author>
+    <authorEmail>pochta@joomlang.ru</authorEmail>
+    <authorUrl>http://www.joomlang.ru</authorUrl>
+    <creationDate>28/03/2013</creationDate>
+    <copyright>Copyright © 2013 www.joomlang.ru. Все права защищены.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL v2</license>
+    <version>3.0.6.1</version>
+    <description>&lt;h1&gt;Русификатор Mosets Tree Package&lt;/h1&gt;&#13;
+&lt;h2&gt;Version: 3.0.6.1&lt;/h2&gt;&#13;
+&lt;hr/&gt;&#13;
+&lt;h2&gt;Добавлен перевод шаблона kinabalu и дополнительных полей.&lt;/h2&gt;&#13;
+&lt;h2&gt;Для возврата английского языка замените соответствующие файлы в папке pole&lt;/h2&gt;&#13;
+&lt;hr/&gt;&#13;
+&lt;h2&gt;&lt;a href="http://www.joomlang.ru" target="_blank"&gt;Русский язык для шаблонов, компонентов и модулей Joomla&lt;/a&gt;&lt;br&gt;&lt;/h2&gt;&#13;
+&lt;hr/&gt;&#13;
+&lt;img src="/../images/jl_logo.png" style="float:left; padding:10px 10px 10px 0;"/&gt;</description>
+    <fileset>
+	    <files folder="pole" target="administrator/components/com_mtree">
+		    <folder>fieldtypes</folder>
+		</files>
+        <files folder="admin" target="administrator/language/ru-RU">
+            <filename>ru-RU.com_mtimporter.sys.ini</filename>
+            <filename>ru-RU.com_mtree.ini</filename>
+            <filename>ru-RU.com_mtree.sys.ini</filename>
+            <filename>ru-RU.plg_extension_mosets.ini</filename>
+            <filename>ru-RU.plg_extension_mosets.sys.ini</filename>
+            <filename>ru-RU.plg_finder_mtree_listings.ini</filename>
+            <filename>ru-RU.plg_search_mtree.ini</filename>
+            <filename>ru-RU.plg_search_mtree.sys.ini</filename>
+            <filename>ru-RU.plg_user_profilepicture.ini</filename>
+            <filename>ru-RU.plg_user_profilepicture.sys.ini</filename>
+        </files>
+        <files folder="site" target="language/ru-RU">
+            <filename>ru-RU.com_mtree.ini</filename>
+            <filename>ru-RU.fld_audioplayer.ini</filename>
+            <filename>ru-RU.fld_coreprice.ini</filename>
+            <filename>ru-RU.fld_corewebsite.ini</filename>
+            <filename>ru-RU.fld_image.ini</filename>
+            <filename>ru-RU.fld_mfile.ini</filename>
+            <filename>ru-RU.fld_videoplayer.ini</filename>
+            <filename>ru-RU.lib_profilepicture.sys.ini</filename>
+            <filename>ru-RU.mod_mt_alphaindex.ini</filename>
+            <filename>ru-RU.mod_mt_alphaindex.sys.ini</filename>
+			<filename>ru-RU.mod_mt_browse.ini</filename>
+			<filename>ru-RU.mod_mt_browse.sys.ini</filename>
+			<filename>ru-RU.mod_mt_categories.ini</filename>
+			<filename>ru-RU.mod_mt_categories.sys.ini</filename>
+			<filename>ru-RU.mod_mt_categories_expanding.ini</filename>
+			<filename>ru-RU.mod_mt_categories_expanding.sys.ini</filename>
+			<filename>ru-RU.mod_mt_dtree.ini</filename>
+			<filename>ru-RU.mod_mt_dtree.sys.ini</filename>
+			<filename>ru-RU.mod_mt_filter.ini</filename>
+			<filename>ru-RU.mod_mt_filter.sys.ini</filename>
+			<filename>ru-RU.mod_mt_lastupdate.ini</filename>
+			<filename>ru-RU.mod_mt_lastupdate.sys.ini</filename>
+			<filename>ru-RU.mod_mt_listing.ini</filename>
+			<filename>ru-RU.mod_mt_listing.sys.ini</filename>
+			<filename>ru-RU.mod_mt_listings.ini</filename>
+			<filename>ru-RU.mod_mt_listings.sys.ini</filename>
+			<filename>ru-RU.mod_mt_menu.ini</filename>
+			<filename>ru-RU.mod_mt_menu.sys.ini</filename>
+			<filename>ru-RU.mod_mt_search.ini</filename>
+			<filename>ru-RU.mod_mt_search.sys.ini</filename>
+			<filename>ru-RU.mod_mt_staticcats.ini</filename>
+			<filename>ru-RU.mod_mt_staticcats.sys.ini</filename>
+			<filename>ru-RU.mod_mt_stats.ini</filename>
+			<filename>ru-RU.mod_mt_stats.sys.ini</filename>
+			<filename>ru-RU.mod_mt_tagcloud.ini</filename>
+			<filename>ru-RU.mod_mt_tagcloud.sys.ini</filename>
+			<filename>ru-RU.mod_mt_votedbest.ini</filename>
+			<filename>ru-RU.mod_mt_votedbest.sys.ini</filename>
+        </files>
+		<files folder="templ" target="components/com_mtree/templates/kinabalu">
+            <filename>templatedetails.xml</filename>
+        </files>
+        <files folder="imglogo" target="images">
+            <filename>jl_logo.png</filename>
+        </files>
+    </fileset>
+</extension>

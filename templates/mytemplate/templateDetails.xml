@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+    <name>mytemplate</name>
+    <creationDate>may 2008</creationDate>
+    <author>Andrey Dzigunskiy</author>
+    <authorEmail>dzigunskiy@bk.ru</authorEmail>
+    <authorUrl>http://support.gorsk.net</authorUrl>
+    <copyright></copyright>
+    <version>2.5</version>
+    <description>my template</description>
+    <files>
+    	<filename>index.php</filename>
+        <filename>index.html</filename>
+        <filename>template_thumbnail.png</filename>
+
+
+        <filename>css/main.css</filename>
+        <filename>css/normalize.css</filename>
+        <filename>css/index.html</filename>
+        
+        <filename>js/main.js</filename>
+        <filename>js/vendor/jquery-1.10.2.min.js</filename>
+        <filename>js/vendor/modernizr-2.6.2.min.js</filename>
+	</files>
+	<positions>
+                <position>header</position>
+		<position>left</position>
+		<position>footer</position>
+	</positions>
+</extension>
