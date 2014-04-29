@@ -27,7 +27,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/mytemplate/css/ie.css" type="text/css" />
 <![endif]-->
 
-<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/mytemplate/js/highslide/highslide.css" />
+<!--<link rel="stylesheet" type="text/css" href="<?php //echo $this->baseurl ?>/templates/mytemplate/js/highslide/highslide.css" />-->
 
 
 <!--******************************************************-->
@@ -43,42 +43,46 @@ $(document).ready(function(){
 </script>-->
 
 </head>
-
 <body>
-<header>
-	<div class="logo_wrap">
-		<a href="/" class="logo">logo</a>
-	</div>
-	<nav>
-		<jdoc:include type="modules" name="mainmenu" style="xhtml" />
-	</nav>
-</header>
-<section class="slideshow">
-	 <jdoc:include type="modules" name="slide" />
-</section>
-<section class="content">
-	<?php if($this->countModules('breadcrumb')) : ?>
-			  <jdoc:include type="modules" name="breadcrumb" />
-			<?php endif; ?>
-	<div class="inner-wrap">
-	   
-		<?php if($this->countModules('left')) : ?>
-		   <aside>
-			   <div class="aside_left">
-				   <jdoc:include type="modules" name="left" style="xhtml" />
-			   </div>
-		   </aside>
-		<?php endif; ?>
-	   <section class="main">
-			 <?php if ($this->getBuffer('message')) : ?>
-				   <div class="message"><jdoc:include type="message" /></div>
-		   <?php endif; ?>
-		   <jdoc:include type="component" />
-	   </section>
-	</div>
-</section>
-<footer>
-	<div class="wrap"><jdoc:include type="modules" name="footer" /></div>
-</footer>
+<div class="bg-light">
+    <header>
+        <div class="wrap">
+            <div class="logo_wrap clearfix">
+                <a href="/" class="logo">logo</a>
+                <p>Ради вас вітати на сайті кафедри господарського права <br />
+                    Національного юридичного університету імені Ярослава Мудрого 
+                </p>
+            </div>
+            <nav class="top_menu">
+                <jdoc:include type="modules" name="mainmenu"  />
+            </nav>
+        </div>
+    </header>
+    <?php if ($this->countModules('slide')) : ?>
+        <section class="slideshow">
+            <jdoc:include type="modules" name="slide" />
+        </section>
+     <?php endif; ?>
+    <section class="main">
+        <div class="wrap">
+            <?php if ($this->countModules('breadcrumb')) : ?>
+                <jdoc:include type="modules" name="breadcrumb" />
+            <?php endif; ?>
+
+            <div class="content">
+                <?php if ($this->getBuffer('message')) : ?>
+                    <div class="message"><jdoc:include type="message" /></div>
+                <?php endif; ?>
+                <jdoc:include type="component" />
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap">
+            <p class="phone">тел. (057) 704-92-00</p>
+            <jdoc:include type="modules" name="footer" />
+        </div>
+    </footer>
+</div>
 </body>
 </html>
